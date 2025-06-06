@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxTime - Compra Relojes de Lujo</title>
+  <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="productos.html">Productos</a>
+  </nav>
+
+  <section id="formulario">
+    <h2>Formulario de Compra</h2>
+    <form class="formulario">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <label for="modelo">Modelo de reloj:</label>
+      <select id="modelo" name="modelo">
+        <option value="">Seleccione un modelo</option>
+        <option>Rolex Submariner</option>
+        <option>Omega Seamaster</option>
+        <option>Tag Heuer Carrera</option>
+        <option>Cartier Santos</option>
+      </select>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" value="1" />
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LuxTime. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

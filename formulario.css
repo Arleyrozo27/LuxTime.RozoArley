@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.527),
+    rgba(0, 0, 0, 0.541)
+  ), url('relojes/millo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000;
+}
+
+.navbar {
+  background: #00000075;
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(25, 0, 255);
+}
+
+#formulario {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000055;
+}
+
+#formulario h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #000;
+  text-shadow: 0 0 5px #ffffffcc;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.formulario button {
+  margin-top: 25px;
+  background-color: #00155a;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #0033a0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background: #181617;
+  font-size: 0.9rem;
+  color: #ffffffb2;
+  box-shadow: 0 0 30px #0e0466a1 inset;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #formulario {
+    margin: 30px 10px;
+    padding: 40px 15px;
+  }
+
+  .formulario button {
+    font-size: 1rem;
+  }
+}

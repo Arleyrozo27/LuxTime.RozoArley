@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+body{
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.527),
+        rgba(0, 0, 0, 0.541)),
+        url(relojes/millo.jpeg); /* Cambia esto al nombre correcto */
+  background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
+  background-repeat: no-repeat;  /* Evita que se repita */
+  background-position: center;   /* Centra la imagen */
+  background-attachment: fixed;  /* Opcional: hace que la imagen no se mueva al hacer scroll */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", 'Times New Roman', Times, serif;
+}
+
+.navbar{
+  background: #00000075;
+  display: flex;
+}
+
+.navbar .logo {
+  color: #00155aab;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+}
+
+.navbar .logo span {
+  color: #000000ad;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  padding: 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  color: #050505;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  animation: fadeUp 1s ease forwards;
+}
+
+.section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+  color: #000000d2;
+  text-align: center;
+  text-shadow: 0 0 8px #000000aa;
+  letter-spacing: 1.5px;
+  filter: drop-shadow(0 0 4px white);
+}
+
+section p{
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  filter: drop-shadow(0 0 4px white);
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #1b034791, #770404af);
+  border-radius: 4px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 12px #ffffff;
+}
+
+.exp {
+  position: relative;
+  width: 50%;
+  padding: 30px 40px;
+  color: #f2d7dc;
+  transition: transform 0.4s ease;
+  cursor: default;
+  will-change: transform;
+}
+
+
+.exp:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  transform: translateX(-7%);
+}
+
+.exp:nth-child(even) {
+  left: 50%;
+  transform: translateX(7%);
+}
+
+.exp:hover {
+  transform: translateX(0) scale(1.05);
+  color: #111111b0;
+  text-shadow: 0 0 10px #ffffffcc;
+}
+
+.exp::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  width: 18px;
+  height: 18px;
+  background: #161515;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ffffffcc;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.exp:nth-child(odd)::before {
+  right: -12px;
+}
+
+.exp:nth-child(even)::before {
+  left: -12px;
+}
+
+.exp h3 {
+  margin-bottom: 8px;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.exp p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #181617;
+  font-size: 0.95rem;
+  color: #ffffffb2;
+  letter-spacing: 0.04em;
+  user-select: none;
+  box-shadow: 0 0 30px #0e0466a1 inset;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin: 0 12px;
+  color: #800f0ff1;
+  font-size: 1.8rem;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(0 0 4px #1d055fee);
+  will-change: transform, color;
+}
+
+.socials a img {
+width: 25px;
+height: 25px;
+transition: transform 0.3s ease, filter 0.3s ease;
+filter: drop-shadow(0 0 4px #22014d);
+will-change: transform, filter;
+}
+
+.socials a:hover {
+  transform: scale(1.5) rotate(-10deg);
+  color: #0f033ae1;
+  filter: drop-shadow(0 0 14px #e7dddfcc);
+}
+
+
+@media (max-width: 991px) {
+  
+  .menu .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  .btn-1 {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  .coffee-group img,
+  .blog-1 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+

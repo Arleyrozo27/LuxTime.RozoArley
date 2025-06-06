@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.541)), url('relojes/millo.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#menu {
+    display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+.menu label {
+  display: none;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.menu .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu .navbar ul li a:hover {
+  color: gold;
+}
+
+.menu-icono {
+  width: 23px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.relog {
+  padding: 120px 30px 60px;
+}
+
+.relog-content {
+  text-align: center;
+}
+
+.relog-content h2 {
+  font-size: 45px;
+  color: #ffffff;
+  text-shadow: 0 0 8px #000000cc;
+  margin-bottom: 20px;
+}
+
+.txt-p {
+  font-size: 18px;
+  color: #eeeeee;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 3px black;
+}
+
+.relog-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.relog-1, .relog-2, .relog-3 {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px #00000077;
+}
+
+.relog-1:hover, .relog-2:hover, .relog-3:hover {
+  transform: scale(1.05);
+}
+
+.relog-1 img,
+.relog-2 img,
+.relog-3 img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.relog-1 h3,
+.relog-2 h3,
+.relog-3 h3 {
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.precio {
+  color: crimson;
+  font-weight: bold;
+}
+
+.services {
+  background-color: #1816167a;
+  border-radius: 15px;
+  padding: 60px 30px;
+  margin: 60px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 15px #00000020;
+  text-align: center;
+}
+
+.services-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-content h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.services-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.services-1,
+.services-2,
+.services-3 {
+  text-align: center;
+  width: 200px;
+}
+
+.services-1 img,
+.services-2 img,
+.services-3 img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.services-1 h3,
+.services-2 h3,
+.services-3 h3 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+
+.services-content p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.btn-1 {
+  background-color: #00155a;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #0033a0;
+}
+
+@media (max-width: 991px) {
+    
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: flex;
+  }
+
+  .relog-group,
+  .services-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txt-p,
+  .services-content p {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu label {
+    display: block;
+  }
+}
