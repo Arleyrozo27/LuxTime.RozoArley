@@ -7,16 +7,25 @@
 LuxTime/
 │
 ├── index.html # Página principal de bienvenida
+
 ├── historia.html # Historia de la empresa
+
 ├── productos.html # Catálogo de relojes de lujo
+
 ├── formulario.html # Formulario de compra
+
 │
 ├── styles.css # Estilos principales para index.html
+
 ├── historia.css # Estilos únicos para la línea de tiempo
+
 ├── productos.css # Estilos para la galería de productos
+
 ├── formulario.css # Estilos para el formulario de pedidos
+
 │
 └── /relojes/ # Carpeta con imágenes (menú, relojes, fondo, etc.)
+
 
 ## 🚀 Funcionalidades
 
